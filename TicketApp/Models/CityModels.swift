@@ -6,7 +6,7 @@
 //
 
 import UIKit
-struct CityModels {
-    let cityTitle: String
-    
-}
+//struct CityModels {
+//    let cityTitle: String
+//    
+//}

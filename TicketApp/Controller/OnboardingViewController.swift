@@ -44,7 +44,6 @@ class OnboardingViewController: UIViewController {
                         present(controller, animated: true, completion: nil)
               }
         
-        
              else {
                   currentPage += 1
                   let indexPath = IndexPath(item: currentPage, section: 0)
@@ -52,7 +51,6 @@ class OnboardingViewController: UIViewController {
               }
     }
     
-
 }
 extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

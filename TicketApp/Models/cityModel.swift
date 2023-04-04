@@ -1,13 +1,13 @@
 //
-//  cityModel.swift
+//  CityModel.swift
 //  TicketApp
 //
-//  Created by Defne Çetiner on 2.04.2023.
+//  Created by Defne Çetiner on 4.04.2023.
 //
 
+import Foundation
 import UIKit
-struct  {
-    let title: String
-    let description: String
-    let image: UIImage
+
+struct CityModel {
+    var cityName: String
 }
