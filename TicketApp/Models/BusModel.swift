@@ -10,21 +10,17 @@ import UIKit
 
 class BusModel {
     var ticketId: Int?
-    var cityFrom: String?
-    var cityTo: String?
-    var date: Int?
-    var campanyName: String?
-    var price: Int?
+    var price: String?
+    var companyImg: String?
+    var time: String?
     
     init() {
         
     }
-    init(tickedId: Int, cityFrom: String, cityTo: String, date: Int, campanyName: String, price: Int? ) {
-        self.cityFrom = cityFrom
-        self.cityTo = cityTo
+    init(tickedId: Int, companyImg: String, price: String?, time: String? ) {
         self.ticketId = tickedId
-        self.date = date
-        self.campanyName = campanyName
+        self.companyImg = companyImg
         self.price = price
+        self.time = time
     }
 }

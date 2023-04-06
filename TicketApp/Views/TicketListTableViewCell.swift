@@ -12,10 +12,13 @@ protocol TicketListTableViewCellProtocol {
 }
 class TicketListTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var companyImage: UIImageView!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var fromCityLabel: UILabel!
     @IBOutlet weak var toCityLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
+    
     var cellProtocol: TicketListTableViewCellProtocol?
     var indexPath: IndexPath?
     
