@@ -7,6 +7,7 @@
 
 import UIKit
 import DropDown
+import SCLAlertView
 
 class ViewController: UIViewController {
     
@@ -68,20 +69,30 @@ class ViewController: UIViewController {
                 }
         }
     
-//
+
          @IBAction func getTicketActionButton(_ sender: Any) {
-//            func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-//              return true
+           func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+               if fromButtonClicked == nil || toButtonClicked == nil || dateTextField.text == "" {
+                   SCLAlertView().showError("Rota seçimini yapmadınız!", subTitle: "Lütfen gerekli alanları doldurarak rotanızı planlayınız")
+                   return false
+               } else if dropDownFrom.selectedItem == dropDownTo.selectedItem{
+                   SCLAlertView().showError("Hatalı Rota Seçimi", subTitle: "Rota noktalarınızı aynı seçtiniz. Lütfen doğru rotayı belirlediğinizden emin olun!")
+                   return false
+               } else { return true }
+               
             }
-//
-//        }
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//
-//        if segue.identifier == "toTicketList" {
-//            if let destinationVC = segue.destination as? TicketListViewController {
-//            }
-//        }
-//    }
+
+        }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+        if segue.identifier == "toTicketList" {
+            if let destinationVC = segue.destination as? TicketListViewController {
+                destinationVC.infoDateTextValue = dateTextField.text!
+                destinationVC.cityText = (dropDownFrom.selectedItem ?? "error") + dropDownTo.selectedItem!
+                
+            }
+        }
+    }
     }
     
 

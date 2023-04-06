@@ -7,16 +7,18 @@
 
 import UIKit
 
+protocol TicketListTableViewCellProtocol {
+    func chooseSeatButton(indexPath:IndexPath)
+}
 class TicketListTableViewCell: UITableViewCell {
 
-    
     @IBOutlet weak var dateLabel: UILabel!
-    
     @IBOutlet weak var fromCityLabel: UILabel!
-    
     @IBOutlet weak var toCityLabel: UILabel!
-    
     @IBOutlet weak var priceLabel: UILabel!
+    var cellProtocol: TicketListTableViewCellProtocol?
+    var indexPath: IndexPath?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -30,5 +32,6 @@ class TicketListTableViewCell: UITableViewCell {
     
 
     @IBAction func chooseSeatButton(_ sender: Any) {
+        cellProtocol?.chooseSeatButton(indexPath: indexPath!)
     }
 }

@@ -8,12 +8,23 @@
 import Foundation
 import UIKit
 
-struct BusModel {
+class BusModel {
+    var ticketId: Int?
     var cityFrom: String?
     var cityTo: String?
     var date: Int?
-    var time: Int?
     var campanyName: String?
-    var campanyImg: UIImage?
     var price: Int?
+    
+    init() {
+        
+    }
+    init(tickedId: Int, cityFrom: String, cityTo: String, date: Int, campanyName: String, price: Int? ) {
+        self.cityFrom = cityFrom
+        self.cityTo = cityTo
+        self.ticketId = tickedId
+        self.date = date
+        self.campanyName = campanyName
+        self.price = price
+    }
 }
