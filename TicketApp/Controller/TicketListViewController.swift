@@ -9,6 +9,8 @@ import UIKit
 
 class TicketListViewController: UIViewController {
 
+    @IBOutlet weak var dateLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -9,6 +9,14 @@ import UIKit
 
 class TicketListTableViewCell: UITableViewCell {
 
+    
+    @IBOutlet weak var dateLabel: UILabel!
+    
+    @IBOutlet weak var fromCityLabel: UILabel!
+    
+    @IBOutlet weak var toCityLabel: UILabel!
+    
+    @IBOutlet weak var priceLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,5 +27,8 @@ class TicketListTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
 
+    @IBAction func chooseSeatButton(_ sender: Any) {
+    }
 }
