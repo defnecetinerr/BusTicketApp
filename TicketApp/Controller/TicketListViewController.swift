@@ -11,15 +11,16 @@ import SCLAlertView
 class TicketListViewController: UIViewController {
     
     @IBOutlet private weak var ticketListTableView: UITableView!
-    var cityText = ""
-    var toCityText = ""
-    var infoDateTextValue = ""
+    static var cityText = ""
+    static var toCityText = ""
+    static var infoDateTextValue = ""
     var busList = [BusModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         ticketListTableView.dataSource = self
         ticketListTableView.delegate = self
+        
         
         let firtTicket = BusModel(tickedId: 1234, companyImg: "kamilkoc", price: "550", time: "14:30")
         let secondTicket = BusModel(tickedId: 2345, companyImg: "nilufer", price: "500",time: "15.00")
@@ -44,6 +45,11 @@ class TicketListViewController: UIViewController {
     @IBAction func goBackButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    
+    @IBAction func selectSeatButton(_ sender: Any) {
+     
+        
+    }
 }
 
 extension TicketListViewController: UITableViewDelegate,UITableViewDataSource {
@@ -58,8 +64,9 @@ extension TicketListViewController: UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let ticketValue = busList[indexPath.row]
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "ticketListViewCell", for: indexPath) as? TicketListTableViewCell else { return UITableViewCell() }
-        cell.fromCityLabel.text = cityText
-        cell.toCityLabel.text = toCityText
+        cell.fromCityLabel.text = TicketListViewController.cityText
+        cell.toCityLabel.text = TicketListViewController.toCityText
+        cell.dateLabel.text = TicketListViewController.infoDateTextValue
         cell.priceLabel.text = ticketValue.price
         cell.timeLabel.text = ticketValue.time
         cell.companyImage.image = UIImage(named: ticketValue.companyImg!)

@@ -54,9 +54,11 @@ final class FilterViewController: UIViewController {
         dropDownFrom.anchorView = sender
         dropDownFrom.bottomOffset = CGPoint(x: 0, y: (sender as AnyObject).frame.size.height)
         dropDownFrom.show()
+        UserDefaults.standard.set(dropDownFrom.selectedItem, forKey: "fromCity")
         dropDownFrom.selectionAction = { (index: Int, item: String) in
             (sender as AnyObject).setTitle(item, for: .normal)
         }
+        
     }
     
     @IBAction func toButtonClicked(_ sender: UIButton) {
@@ -67,8 +69,10 @@ final class FilterViewController: UIViewController {
         dropDownTo.selectionAction = { (index: Int, item: String) in
             (sender as AnyObject).setTitle(item, for: .normal)
         }
+        UserDefaults.standard.set(dropDownTo.selectedItem, forKey: "toCity")
+        
     }
-    
+  
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         if dropDownFrom.selectedItem?.isEmpty ?? true || dropDownTo.selectedItem?.isEmpty ?? true || dateTextField.text == "" {
             alertView.showError("Rota seçimini yapmadınız!", subTitle: "Lütfen gerekli alanları doldurarak rotanızı planlayınız")
@@ -85,12 +89,13 @@ final class FilterViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toTicketList" {
             if let destinationVC = segue.destination as? TicketListViewController {
-                destinationVC.infoDateTextValue = dateTextField.text!
-                destinationVC.cityText = (dropDownFrom.selectedItem ?? "error")
-                destinationVC.toCityText = (dropDownTo.selectedItem ?? "error")
+                TicketListViewController.cityText = (dropDownFrom.selectedItem ?? "error")
+                TicketListViewController.toCityText = (dropDownTo.selectedItem ?? "error")
+                TicketListViewController.infoDateTextValue = dateTextField.text ?? "error"
         
             }
         }
+        
     }
 }
 
