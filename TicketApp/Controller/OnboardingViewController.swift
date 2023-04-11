@@ -28,20 +28,16 @@ class OnboardingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         slides = [
-                    OnboardingSlide(title: "Traveling is so easy now", description: "Sit back and buy tickets with confidence and travel with confidence", image: #imageLiteral(resourceName: "BUS2")),
-                    OnboardingSlide(title: "Your luggage is now free!", description: "It is possible to travel freely and safely with your luggage. Are you ready?", image: #imageLiteral(resourceName: "2")),
-                    OnboardingSlide(title: "Let's fasten our belts!", description: "Now you are ready for your most comfortable journey. Have a good journey.", image: #imageLiteral(resourceName: "3"))
+                    OnboardingSlide(title: "Her Bütçeye Uygun", description: "Biletle size tüm firmaların otobüs biletlerini sorgulama ve karşılaştırma imkanı sunar.", image: #imageLiteral(resourceName: "1")),
+                    OnboardingSlide(title: "Güvenli Bagaj", description: "Bagajlarınızla, Biletle güvencesiyle doyasıya yolculuk yapabilirsiniz.", image: #imageLiteral(resourceName: "2")),
+                    OnboardingSlide(title: "Hazır mısınız? İşte başlıyoruz...", description: "Türkiye'nin En Büyük Otobüs Bileti mobil uygulamasındasınız. Kemerlerinizi bağlayınız!!!", image: #imageLiteral(resourceName: "3"))
                 ]
     }
     
    
     @IBAction func nextButtonAction(_ sender: Any) {
         if currentPage == slides.count - 1 {
-            let controller = storyboard?.instantiateViewController(identifier: "toGoVC") as! UINavigationController
-                        controller.modalPresentationStyle = .fullScreen
-                        controller.modalTransitionStyle = .flipHorizontal
-                      //  UserDefaults.standard.hasOnboarded = true
-                        present(controller, animated: true, completion: nil)
+            performSegue(withIdentifier: "toFilterVC" , sender: nil)
               }
         
              else {

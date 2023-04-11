@@ -17,7 +17,14 @@ class SeatViewController: UIViewController {
     var selectedSeatsLeft = [Int]()
     var selectedSeatsRight = [Int]()
     
+    var selectedSeatIndexRight = [Int]()
+    var selectedSeatIndexLeft = [Int]()
+    
+    var selectedSeatsLeftStr = [String]()
+    var selectedSeatsRightStr = [String]()
+    
     var selectedSeatNumberString = ""
+    var total = ""
     var tempDateTextValue = ""
     var selectedSeatNumbers = [String]()
     
@@ -55,7 +62,11 @@ class SeatViewController: UIViewController {
     
     
     @IBAction func goPay(_ sender: Any) {
-       
+        if selectedSeatsRightStr.count + selectedSeatsLeftStr.count < 6 {
+            performSegue(withIdentifier: "goPayPage", sender: nil)
+        }else {
+            SCLAlertView().showError("UYARI", subTitle: "Lütfen 5 koltuktan az seçim yaptığınızdan emin olun.", closeButtonTitle: "Tamam")
+        }
     }
 }
 extension SeatViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -87,65 +98,40 @@ extension SeatViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-      
+        
         if collectionView == self.rightCollectionView {
             
             let selectedRightCell: UICollectionViewCell = collectionView.cellForItem(at: indexPath)!
             let rightCell = collectionView.cellForItem(at: indexPath)
-            
-           var seatNumber = indexPath.row + 1
-            if selectedSeatsRight.contains(indexPath.row+1) {
-                if let index = selectedSeatsRight.firstIndex(of: indexPath.row+1) {
-                    selectedSeatsRight.remove(at: index)
+            if selectedSeatIndexRight.contains(indexPath.item) {
+                if let index = selectedSeatIndexRight.firstIndex(of: indexPath.item) {
+                    selectedSeatIndexRight.remove(at: index)
+                    selectedSeatsRightStr.remove(at: index)
+                    rightCell?.backgroundColor = UIColor.systemGreen
                 }
-                rightCell?.backgroundColor = UIColor.clear
             } else {
-                if selectedSeatsRight.count < 5 {
-                    selectedSeatsRight .append(indexPath.row+1)
-                    rightCell?.backgroundColor = UIColor.orange
-                }else{
-                    
-                    SCLAlertView().showError("UYARI", subTitle: "Lütfen 5 koltuktan az seçim yaptığınızdan emin olun.", closeButtonTitle: "Tamam")
-                }
+                selectedSeatsRightStr.append(rightSeatNumbers[indexPath.item])
+                selectedSeatIndexRight.append(indexPath.item)
+                rightCell?.backgroundColor = UIColor.orange
             }
-            selectedSeatNumbers = selectedSeatNumbers.filter { $0 != rightSeatNumbers[indexPath.row]}
         } else {
-            
-            
             let selectedLeftCell: UICollectionViewCell = collectionView.cellForItem(at: indexPath)!
             let leftCell = collectionView.cellForItem(at: indexPath)
-            
-            var seatNumber = indexPath.row + 1
-            if selectedSeatsLeft .contains(indexPath.row+1) {
-                if let index = selectedSeatsLeft .firstIndex(of: indexPath.row+1) {
-                    selectedSeatsLeft.remove(at: index)
+            if selectedSeatIndexLeft.contains(indexPath.item) {
+                if let index = selectedSeatIndexLeft.firstIndex(of: indexPath.item) {
+                    selectedSeatIndexLeft.remove(at: index)
+                    selectedSeatsLeftStr.remove(at: index)
+                    leftCell?.backgroundColor = UIColor.systemGreen
                 }
-                leftCell?.backgroundColor = UIColor.clear
             } else {
-                if selectedSeatsLeft.count < 5 {
-                    selectedSeatsLeft .append(indexPath.row+1)
-                    leftCell?.backgroundColor = UIColor.orange
-                }else{
-                    
-                    SCLAlertView().showError("UYARI", subTitle: "Lütfen 5 koltuktan az seçim yaptığınızdan emin olun.", closeButtonTitle: "Tamam")
-                }
-                
+                selectedSeatsLeftStr.append(leftSeatNumbers[indexPath.item])
+                selectedSeatIndexRight.append(indexPath.item)
+                leftCell?.backgroundColor = UIColor.orange
             }
-
-            selectedSeatNumbers = selectedSeatNumbers.filter { $0 != leftSeatNumbers[indexPath.row]}
-            
-            
-        }   
-    }
-    
-    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        if selectedSeatsLeft.count == 0 {
-            SCLAlertView().showError("Koltuk Seçimi Yapmadınız", subTitle: "", closeButtonTitle: "Tamam")
-            return false
-        } else {
-            return true
         }
-        if selectedSeatsRight.count == 0 {
+    }
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if selectedSeatsLeft.count == 0 && selectedSeatsRight.count == 0 {
             SCLAlertView().showError("Koltuk Seçimi Yapmadınız", subTitle: "", closeButtonTitle: "Tamam")
             return false
         } else {
@@ -159,17 +145,22 @@ extension SeatViewController: UICollectionViewDelegate, UICollectionViewDataSour
         if segue.identifier == "goPayPage" {
             
             let destinationVC = segue.destination as? TicketPayViewController
-    
-            for i in 1...selectedSeatsLeft.count {
-                selectedSeatNumberString = "Koltuk Numaranız:" + selectedSeatNumberString + "  " +  String(selectedSeatsLeft[i-1])
+            if selectedSeatsLeft.count == 0 {
+                print("hata")
+            }else {
+                for i in 1...selectedSeatsLeft.count {
+                    selectedSeatNumberString = selectedSeatNumberString + "  " +  String(selectedSeatsLeft[i-1])
+                }
             }
-            destinationVC?.seatNumberTextValue = selectedSeatNumberString
+            
+            var totalArray = selectedSeatsRightStr + selectedSeatsLeftStr
+            let totalString = totalArray.joined(separator: ",")
+            total = totalString
+            destinationVC?.seatNumberTextValue = total
             destinationVC?.dateTextValue = tempDateTextValue
             
         }
     }
-
-    
 }
 
 
