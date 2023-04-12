@@ -107,12 +107,12 @@ extension SeatViewController: UICollectionViewDelegate, UICollectionViewDataSour
                 if let index = selectedSeatIndexRight.firstIndex(of: indexPath.item) {
                     selectedSeatIndexRight.remove(at: index)
                     selectedSeatsRightStr.remove(at: index)
-                    rightCell?.backgroundColor = UIColor.systemGreen
+                    rightCell?.backgroundColor = UIColor.systemTeal
                 }
             } else {
                 selectedSeatsRightStr.append(rightSeatNumbers[indexPath.item])
                 selectedSeatIndexRight.append(indexPath.item)
-                rightCell?.backgroundColor = UIColor.orange
+                rightCell?.backgroundColor = UIColor.systemBlue
             }
         } else {
             let selectedLeftCell: UICollectionViewCell = collectionView.cellForItem(at: indexPath)!
@@ -121,12 +121,12 @@ extension SeatViewController: UICollectionViewDelegate, UICollectionViewDataSour
                 if let index = selectedSeatIndexLeft.firstIndex(of: indexPath.item) {
                     selectedSeatIndexLeft.remove(at: index)
                     selectedSeatsLeftStr.remove(at: index)
-                    leftCell?.backgroundColor = UIColor.systemGreen
+                    leftCell?.backgroundColor = UIColor.systemTeal
                 }
             } else {
                 selectedSeatsLeftStr.append(leftSeatNumbers[indexPath.item])
                 selectedSeatIndexRight.append(indexPath.item)
-                leftCell?.backgroundColor = UIColor.orange
+                leftCell?.backgroundColor = UIColor.systemBlue
             }
         }
     }
