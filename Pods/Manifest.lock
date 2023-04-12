@@ -1,0 +1,28 @@
+PODS:
+  - ALBusSeatView (0.2.5)
+  - DropDown (2.3.13)
+  - lottie-ios (4.1.3)
+  - SCLAlertView (0.8)
+
+DEPENDENCIES:
+  - ALBusSeatView
+  - DropDown
+  - lottie-ios
+  - SCLAlertView (~> 0.8)
+
+SPEC REPOS:
+  trunk:
+    - ALBusSeatView
+    - DropDown
+    - lottie-ios
+    - SCLAlertView
+
+SPEC CHECKSUMS:
+  ALBusSeatView: 5416cf8e3d0d8d993da5f726f92cbb425463efd2
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  lottie-ios: d0954d3150061f662ed0adf96ef98d7421864c47
+  SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
+
+PODFILE CHECKSUM: f41ccca43eac841b3104750c1a8835096d800798
+
+COCOAPODS: 1.12.0

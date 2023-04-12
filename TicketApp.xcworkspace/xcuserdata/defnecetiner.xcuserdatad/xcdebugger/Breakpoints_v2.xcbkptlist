@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "98D7F2A0-F91D-4899-BD51-950CECA67B56"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5DA902C2-3BC7-45A2-BEFB-C81DCA9D552E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TicketApp/Controller/FilterViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "shouldPerformSegue(withIdentifier:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6DEE4C66-B21D-4279-9893-1D33254FBAFA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TicketApp/Views/LeftSeatCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "LeftSeatCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "6DEE4C66-B21D-4279-9893-1D33254FBAFA - d5a2d6c56e717cc4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TicketApp.LeftSeatCell.leftSeatLabel.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "TicketApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/defnecetiner/Desktop/TicketApp/TicketApp/Views/LeftSeatCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "6DEE4C66-B21D-4279-9893-1D33254FBAFA - 76cc55c39b1fc0b0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TicketApp.LeftSeatCell.leftSeatLabel.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "TicketApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/defnecetiner/Desktop/TicketApp/TicketApp/Views/LeftSeatCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "6DEE4C66-B21D-4279-9893-1D33254FBAFA - a9ee0e5007e1dbc3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TicketApp.LeftSeatCell.leftSeatLabel.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "TicketApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/defnecetiner/Desktop/TicketApp/TicketApp/Views/LeftSeatCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "6DEE4C66-B21D-4279-9893-1D33254FBAFA - 11d189a5bd5cb986"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TicketApp.LeftSeatCell.leftSeatLabel.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "TicketApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/defnecetiner/Desktop/TicketApp/TicketApp/Views/LeftSeatCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "6DEE4C66-B21D-4279-9893-1D33254FBAFA - 441b59b22539fd19"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TicketApp.LeftSeatCell.init(frame: __C.CGRect) -&gt; TicketApp.LeftSeatCell"
+                  moduleName = "TicketApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/defnecetiner/Desktop/TicketApp/TicketApp/Views/LeftSeatCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "6DEE4C66-B21D-4279-9893-1D33254FBAFA - 4a11f630775f8f9d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TicketApp.LeftSeatCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;TicketApp.LeftSeatCell&gt;"
+                  moduleName = "TicketApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/defnecetiner/Desktop/TicketApp/TicketApp/Views/LeftSeatCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AF151B01-AE18-4D6A-8FCC-7A80824DB330"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TicketApp/Controller/SeatViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "SeatViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "AF151B01-AE18-4D6A-8FCC-7A80824DB330 - 73e5d240162a8bab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TicketApp.SeatViewController.selectedSeatsLeft.getter : Swift.Array&lt;Swift.Int&gt;"
+                  moduleName = "TicketApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/defnecetiner/Desktop/TicketApp/TicketApp/Controller/SeatViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "AF151B01-AE18-4D6A-8FCC-7A80824DB330 - 880bcc60d7b2e39f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TicketApp.SeatViewController.selectedSeatsLeft.setter : Swift.Array&lt;Swift.Int&gt;"
+                  moduleName = "TicketApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/defnecetiner/Desktop/TicketApp/TicketApp/Controller/SeatViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "AF151B01-AE18-4D6A-8FCC-7A80824DB330 - febe1556035a7dae"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TicketApp.SeatViewController.selectedSeatsLeft.modify : Swift.Array&lt;Swift.Int&gt;"
+                  moduleName = "TicketApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/defnecetiner/Desktop/TicketApp/TicketApp/Controller/SeatViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "AF151B01-AE18-4D6A-8FCC-7A80824DB330 - 1ae4c23c94da22df"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TicketApp.SeatViewController.selectedSeatsLeft.modify : Swift.Array&lt;Swift.Int&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "TicketApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/defnecetiner/Desktop/TicketApp/TicketApp/Controller/SeatViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "AF151B01-AE18-4D6A-8FCC-7A80824DB330 - 7d838ab4d76f5cce"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TicketApp.SeatViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; TicketApp.SeatViewController"
+                  moduleName = "TicketApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/defnecetiner/Desktop/TicketApp/TicketApp/Controller/SeatViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "256">
+               </Location>
+               <Location
+                  uuid = "AF151B01-AE18-4D6A-8FCC-7A80824DB330 - a9f7050d975ae809"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TicketApp.SeatViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;TicketApp.SeatViewController&gt;"
+                  moduleName = "TicketApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/defnecetiner/Desktop/TicketApp/TicketApp/Controller/SeatViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "232">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CED0109A-978A-4693-98BF-85F17A34F4F0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TicketApp/Controller/SeatViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "SeatViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "CED0109A-978A-4693-98BF-85F17A34F4F0 - b0227b1f53e79244"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TicketApp.SeatViewController.selectedSeatsRight.getter : Swift.Array&lt;Swift.Int&gt;"
+                  moduleName = "TicketApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/defnecetiner/Desktop/TicketApp/TicketApp/Controller/SeatViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "CED0109A-978A-4693-98BF-85F17A34F4F0 - 67cda45a7b0a0a48"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TicketApp.SeatViewController.selectedSeatsRight.setter : Swift.Array&lt;Swift.Int&gt;"
+                  moduleName = "TicketApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/defnecetiner/Desktop/TicketApp/TicketApp/Controller/SeatViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "CED0109A-978A-4693-98BF-85F17A34F4F0 - 120a2c99ba97c459"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TicketApp.SeatViewController.selectedSeatsRight.modify : Swift.Array&lt;Swift.Int&gt;"
+                  moduleName = "TicketApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/defnecetiner/Desktop/TicketApp/TicketApp/Controller/SeatViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "CED0109A-978A-4693-98BF-85F17A34F4F0 - ab8669343df4aea2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TicketApp.SeatViewController.selectedSeatsRight.modify : Swift.Array&lt;Swift.Int&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "TicketApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/defnecetiner/Desktop/TicketApp/TicketApp/Controller/SeatViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "CED0109A-978A-4693-98BF-85F17A34F4F0 - 7d838ab4d76f5cad"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TicketApp.SeatViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; TicketApp.SeatViewController"
+                  moduleName = "TicketApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/defnecetiner/Desktop/TicketApp/TicketApp/Controller/SeatViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "304">
+               </Location>
+               <Location
+                  uuid = "CED0109A-978A-4693-98BF-85F17A34F4F0 - a9f7050d975ae86a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TicketApp.SeatViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;TicketApp.SeatViewController&gt;"
+                  moduleName = "TicketApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/defnecetiner/Desktop/TicketApp/TicketApp/Controller/SeatViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "280">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
